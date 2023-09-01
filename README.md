@@ -18,6 +18,13 @@ This is an end-to-end deep learning project for classifying whether an image of 
 	cd houseplant-healthy
 	
 	```
+## Model
+
+![Model 1](model-1.png)
+
+
+## Results
+![Model Predict 1](model-predict-1.png)
 
 
 
