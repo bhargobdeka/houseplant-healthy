@@ -1,4 +1,5 @@
 from fastapi import FastAPI, File, UploadFile
+from fastapi.middleware.cors import CORSMiddleware 
 import uvicorn
 import numpy as np
 import io
@@ -17,6 +18,18 @@ else:
 # pip install numpy~=1.19.5 fixed the issue to load the above model
 
 app = FastAPI()
+
+origins = [
+    "http://localhost",
+    "http://localhost:3000",
+]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 CLASS_NAMES = ['healthy', 'wilted']
