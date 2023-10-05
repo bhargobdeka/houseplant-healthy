@@ -1,2 +1,8 @@
 .venv/
 .vscode/
+houseplant-image/
+.DS_Store
+.icloud
+houseplant_images/
+.model-predict-1.png.icloud
+images_from_web/
