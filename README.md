@@ -46,7 +46,7 @@ The FastAPI backend serves as the core of our houseplant health assessment proje
 
 ## TensorFlow Serving
 
-I used TensorFlow Serving to serve our trained deep learning model with different versions based on our preference. Automatically, the current code would serve the latest model which is 3 for this code. But, we can control this within the `main_TFserving.py`.
+I used TensorFlow Serving to serve our trained deep learning model with different versions based on our preference. Automatically, the current code would serve the latest model which is '3' provided in `model_saved` folder for this code. But, we can control this within the `main_TFserving.py`.
 
 ## Frontend using Node.js
 
@@ -55,6 +55,29 @@ My project includes an user-friendly frontend built with **Node.js**. It allows 
 <p align="center">
   <img src=houseplantWeb.png width="700px" height="500px" >
 </p>
+
+## Future Work
+
+In the future, I plan to expand the project by:
+
+- Integrating with Google Cloud Platform (GCP) for scalability and additional services.
+- Developing a mobile app using **React Native** for on-the-go plant health monitoring.
+- Improving the predictive accuracy for the CNN model.
+- Collecting more real data from community for training and testing.
+
+Stay tuned for more updates!
+
+---
+
+**Disclaimer**: This project is for educational purposes and should not replace professional plant care advice. Always consult a plant expert for accurate plant health assessments and care recommendations.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+I would like to extend my heartfelt thanks to [codebasics](https://www.youtube.com/watch?v=dGtDTjYs3xc&list=PLeo1K3hjS3ut2o1ay5Dqh-r1kq6ZU8W0M&index=17&t=24s) on YouTube for their invaluable tutorials and inspiration. Their end-to-end deep learning project on potato-disease provided the initial spark and guidance for my own project on houseplants. I am grateful for their educational content and the impact it had on this project.
 
 <!-- ## Installation
 
