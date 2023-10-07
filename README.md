@@ -16,6 +16,46 @@ Houseplant Health Check is a project that helps you keep your houseplants health
 - [Frontend using Node.js](#frontend-using-nodejs)
 - [Future Work](#future-work)
 
+## Data Collection
+
+The dataset used in this project was taken from [Kaggle](https://www.kaggle.com/datasets/russellchan/healthy-and-wilted-houseplant-images/data). Also, other images from the net were downloaded and dodgy images were removed. The dataset includes two classes: **Healthy** and **Wilted**.
+
+## Deep Learning Model
+
+In this project, we employed a Convolutional Neural Network (CNN) to tackle the task of [insert the task or problem the model is solving, e.g., image classification, object detection, etc.]. The following is an overview of the CNN architecture used:
+
+- **Input Shape**: The input images were preprocessed to have a shape of (BATCH_SIZE, IMAGE_SIZE, IMAGE_SIZE, CHANNELS), where BATCH_SIZE is set to 32, IMAGE_SIZE is 256 pixels, and CHANNELS is 3 for RGB color images.
+
+- **Layers**:
+
+  - The model begins with data preprocessing, including resizing and rescaling.
+  - Data augmentation techniques were applied to increase the diversity of the training data.
+  - Several convolutional layers were used, each with a 3x3 kernel size and ReLU activation.
+  - After each convolutional layer, there is a max-pooling layer with a 2x2 pool size to downsample the feature maps.
+  - The process of convolution and max-pooling was repeated several times to capture hierarchical features.
+  - The final layers include flattening the feature maps, followed by fully connected layers with ReLU activation.
+  - The output layer has a softmax activation with 2 units, corresponding to the 2 classes in our problem.
+
+- **Model Building**: The model architecture was built using TensorFlow's Sequential API, and the input shape was specified as input_shape.
+
+This CNN architecture was designed to effectively learn and represent features from the input images, making it suitable for the specific problem at hand. Feel free to explore the model's details and fine-tune it as needed for your own use cases.
+
+## Fast API
+
+The FastAPI backend serves as the core of our houseplant health assessment project. It provides RESTful endpoints for image uploads and health predictions. To run the FastAPI server, follow the code in `main.py` in the `api` directory. You can run the `main.py` and then use the local host link to upload images or use **postman**
+
+## TensorFlow Serving
+
+I used TensorFlow Serving to serve our trained deep learning model with different versions based on our preference. Automatically, the current code would serve the latest model which is 3 for this code. But, we can control this within the `main_TFserving.py`.
+
+## Frontend using Node.js
+
+My project includes an user-friendly frontend built with **Node.js**. It allows me to use a local host where I can upload plant images and receive health assessments, such as the class and the confidence level. The frontend code and setup instructions can be found in the `frontend` directory.
+
+<p align="center">
+  <img src=houseplantWeb.png width="700px" height="500px" >
+</p>
+
 <!-- ## Installation
 
 1. Clone the repository:
