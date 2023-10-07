@@ -1,9 +1,11 @@
 # houseplant-healthy
+
 ![Houseplant Healthy Logo](houseplant.jpg)
+<img src=houseplant.jpg alt="Houseplant Healthy Logo" width="200" height="200">
 
-This is an end-to-end deep learning project for classifying whether an image of a houseplant is healthy or not (wilted)
+Houseplant Health Check is a project that helps you keep your houseplants healthy and thriving. It employs deep learning techniques to analyze plant images, serves the model using TensorFlow Serving, provides a FastAPI backend for predictions, and has a Node.js frontend for a user-friendly interface.
 
-## Installation
+<!-- ## Installation
 
 1. Clone the repository:
 
@@ -16,7 +18,7 @@ This is an end-to-end deep learning project for classifying whether an image of 
 
 	```bash
 	cd houseplant-healthy
-	
+
 	```
 ## Model
 
@@ -24,9 +26,4 @@ This is an end-to-end deep learning project for classifying whether an image of 
 
 
 ## Results
-![Model Predict 1](model-predict-1.png)
-
-
-
-
-	
+![Model Predict 1](model-predict-1.png) -->
