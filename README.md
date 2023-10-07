@@ -1,7 +1,9 @@
-# houseplant-healthy
+# Houseplant-Healthy
 
 <!-- ![Houseplant Healthy Logo](houseplant.jpg) -->
-<img src=houseplant.jpg alt="Houseplant Healthy Logo" width="300" height="200">
+<p align="center">
+  <img src=houseplant.jpg width="700px" height="500px" >
+</p>
 
 Houseplant Health Check is a project that helps you keep your houseplants healthy and thriving. It employs deep learning techniques to analyze plant images, serves the model using TensorFlow Serving, provides a FastAPI backend for predictions, and has a Node.js frontend for a user-friendly interface.
 
